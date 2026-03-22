@@ -1,0 +1,461 @@
+ Retention",why:"Building trust + recognition for dispersed technical teams. 6-state 185-tech retention strategies.",tags:"wayne high ops retention"},
+  {day:"Thursday Mar 26",time:"2:15–3:15 PM",title:"Real RMR: Building Scalable & Valuable Revenue Streams for System Integrators",room:"Casanova 504",assigned:"Trainer + Jeremy (Wayne catches partial)",pri:"MUST ATTEND",cat:"RMR / Revenue",why:"RSPNDR/Ai-RGUS model. AI+maintenance managed services increase enterprise value. BEARING input.",tags:"trainer jeremy must rmr revenue"},
+  {day:"Thursday Mar 26",time:"3:00–3:45 PM",title:"⭐ Drones & Site Security: Formula 1 Las Vegas Playbook (Skydio + LVMPD)",room:"Bridge Booth #25059",assigned:"ALL THREE",pri:"HIGH",cat:"Drone / Operations",why:"LVMPD + Skydio real-world DFR playbook at F1. Applicable to large commercial + venue accounts.",tags:"wayne trainer jeremy high drone"},
+  {day:"Friday Mar 27",time:"10:00–11:00 AM",title:"Day 3 Keynote: The Human Nature of Cyber Security",room:"Main Stage",assigned:"If present early",pri:"HIGH IF PRESENT",cat:"Keynote",why:"Dr. Jessica Barker. Human factors + social engineering. SSU member education content.",tags:"keynote high cyber"},
+];
+
+const CHECKLIST = [
+  {id:"c1",name:"Alarm.com / CHeKT / OpenEye",booth:"14039",tier:"MUST HIT",cat:"Alarm Platform",day:"Wed AM — FIRST STOP",who:"Wayne"},
+  {id:"c2",name:"FieldHub",booth:"31093",tier:"MUST HIT",cat:"Field Ops ERP",day:"Wed AM — SECOND",who:"Wayne + Jeremy"},
+  {id:"c3",name:"NAPCO Security Technologies",booth:"12031",tier:"MUST HIT",cat:"5G Communicators",day:"Wed (entrance)",who:"Wayne"},
+  {id:"c4",name:"LVT (LiveView Technologies)",booth:"29061",tier:"MUST HIT",cat:"AI Mobile Surveillance",day:"Wed PM",who:"Wayne + Jeremy"},
+  {id:"c5",name:"IQSIGHT (ex-Bosch Video)",booth:"11053",tier:"MUST HIT",cat:"GenAI Video Analytics",day:"Wed AM",who:"Jeremy"},
+  {id:"c6",name:"Skydio",booth:"TBD — show app",tier:"MUST HIT",cat:"Drone / DFR",day:"Thu 3PM session + find booth",who:"ALL THREE"},
+  {id:"c7",name:"Sage Integration / Experience Center",booth:"LL1",tier:"MUST HIT",cat:"Integration + Demo",day:"Wed walk-through",who:"ALL THREE"},
+  {id:"c8",name:"Honeywell Building Automation",booth:"20059",tier:"HIGH",cat:"Enterprise Access + AI",day:"Thu PM",who:"Jeremy"},
+  {id:"c9",name:"Motorola Solutions / Calipsa",booth:"14059",tier:"HIGH",cat:"Video Analytics",day:"Wed PM",who:"Jeremy"},
+  {id:"c10",name:"Resideo / First Alert",booth:"10047",tier:"HIGH",cat:"Residential Alarm + Video",day:"Wed AM",who:"Wayne"},
+  {id:"c11",name:"Elite Interactive Solutions",booth:"35051",tier:"HIGH",cat:"Remote Video Guarding",day:"Wed PM",who:"Wayne"},
+  {id:"c12",name:"Echodyne",booth:"15121",tier:"HIGH",cat:"Perimeter Radar",day:"Wed PM",who:"Wayne"},
+  {id:"c13",name:"ISC StartUps Pavilion",booth:"Zone — app",tier:"HIGH",cat:"Emerging Tech",day:"Wed PM — JEREMY",who:"Jeremy PRIMARY"},
+  {id:"c14",name:"IDIS Americas",booth:"8037",tier:"HIGH",cat:"AI Video / Edge",day:"Wed AM",who:"Jeremy"},
+  {id:"c15",name:"Verkada",booth:"18033",tier:"HIGH",cat:"Cloud Physical Security",day:"Thu AM",who:"Jeremy"},
+  {id:"c16",name:"DMP",booth:"20075",tier:"HIGH",cat:"Alarm + Drones",day:"Wed AM",who:"Wayne"},
+  {id:"c17",name:"Trackforce",booth:"2051",tier:"HIGH",cat:"Workforce Management",day:"Thu PM",who:"Jeremy"},
+  {id:"c18",name:"Aiphone",booth:"18109",tier:"MEDIUM",cat:"Intercom + Access",day:"Thu PM",who:"Jeremy"},
+  {id:"c19",name:"Asylon Robotics",booth:"2097",tier:"MEDIUM",cat:"Drone / Autonomous",day:"Thu PM",who:"Wayne"},
+  {id:"c20",name:"DroneShield",booth:"19137",tier:"MEDIUM",cat:"Counter-Drone",day:"Thu PM",who:"Wayne"},
+  {id:"c21",name:"HID",booth:"22136",tier:"MEDIUM",cat:"Digital Trust + Identity",day:"Wed PM",who:"Jeremy"},
+  {id:"c22",name:"Gallagher Security",booth:"25089",tier:"MEDIUM",cat:"Access Control",day:"Thu PM",who:"Jeremy"},
+  {id:"c23",name:"Turing AI",booth:"23088",tier:"MEDIUM",cat:"AI Video Analytics",day:"Wed",who:"Jeremy"},
+  {id:"c24",name:"Ambient.ai",booth:"23005",tier:"MEDIUM",cat:"AI Threat Detection",day:"Wed",who:"Jeremy"},
+  {id:"c25",name:"Hakimo",booth:"7141",tier:"MEDIUM",cat:"AI Access + Video",day:"Wed",who:"Jeremy"},
+  {id:"c26",name:"Johnson Controls",booth:"18019",tier:"MEDIUM",cat:"Enterprise Security",day:"Thu PM",who:"Wayne"},
+  {id:"c27",name:"D-Tools SI v24",booth:"1064",tier:"MEDIUM",cat:"Integrator Software",day:"Wed",who:"Jeremy"},
+  {id:"c28",name:"Xtract One Technologies",booth:"29053",tier:"MEDIUM",cat:"Weapons Screening",day:"Thu PM",who:"Jeremy"},
+  {id:"c29",name:"Security Brands (Ascent)",booth:"4103",tier:"MEDIUM",cat:"Access Control",day:"Wed",who:"Jeremy"},
+  {id:"c30",name:"ATraq",booth:"4042",tier:"MEDIUM",cat:"Alarm Automation",day:"Wed",who:"Wayne"},
+  {id:"c31",name:"Dispatchify",booth:"33111",tier:"MEDIUM",cat:"Security Marketplace",day:"Thu PM",who:"Wayne"},
+  {id:"c32",name:"Airship AI",booth:"31047",tier:"MEDIUM",cat:"AI Video Intelligence",day:"Thu PM",who:"Jeremy"},
+  {id:"c33",name:"Nightingale Security",booth:"6140",tier:"MEDIUM",cat:"Drone / Autonomous",day:"Thu PM",who:"Wayne"},
+  {id:"c34",name:"Quanergy LiDAR",booth:"LL1 area",tier:"MEDIUM",cat:"LiDAR Security",day:"Wed (in Experience Center)",who:"ALL THREE"},
+];
+
+const ADCOM_SCHEDULE = [
+  {time:"WED 9:00 AM",title:"AI Proposal Builder Training",who:"Jeremy",pri:"MUST",note:"Capture full workflow + time-to-generate. 50%+ savings = immediate company-wide rollout.",key:false},
+  {time:"WED 10:00 AM",title:"Booth Deep Dive #14039 — Prism Cameras, CHeKT, V731B Solar, OpenEye",who:"Wayne (FIRST STOP)",pri:"MUST",note:"CHeKT Video Bridge per-account RMR. V731B solar MT/WY winter requirements. Fire Comm pricing.",key:false},
+  {time:"WED 10:15 AM",title:"Proactive Video / CHeKT RMR Playbook Training",who:"Wayne or Jeremy",pri:"MUST",note:"VIDEO RMR PLAYBOOK. CHeKT + RVM + AI Deterrence as recurring revenue drivers for existing accounts.",key:false},
+  {time:"WED 11:30 AM",title:"Winning in Commercial (Unified Video+Access+Intrusion)",who:"Jeremy",pri:"HIGH",note:"Commercial account expansion — unified platform capabilities.",key:false},
+  {time:"WED 12:45 PM",title:"Next-Gen Video: Prism Cameras + AI Video Event Search",who:"Jeremy",pri:"HIGH",note:"Full camera specs + AI search demo. Note pricing model.",key:false},
+  {time:"WED 2:00 PM",title:"Growth Opportunities: Safety Button, Self-Install, Revenue Retention",who:"Wayne",pri:"HIGH",note:"New addressable market products. Revenue Retention Services = churn reduction.",key:false},
+  {time:"WED 3:15 PM",title:"⭐ Live Q&A with President Dan Kerzner",who:"WAYNE — bring prepared question",pri:"HIGH",note:"PREPARED QUESTION: 'What is the CHeKT video RMR rollout timeline and minimum account requirement for dealers in 2026?'",key:true},
+  {time:"WED 5:00–7:15 PM",title:"⭐ Alarm.com Partner Reception — LAVO Italian Restaurant",who:"Wayne + Jeremy (if dealer status)",pri:"ATTEND IF INVITED",note:"Dealer-only. Request invite from your Alarm.com rep BEFORE THE SHOW. Best relationship moment.",key:true},
+  {time:"THU 9:00 AM",title:"Gunshot Detection Integration + OpenEye Video Monitoring",who:"Jeremy",pri:"HIGH",note:"NEW RMR PRODUCT. Gunshot detection for schools/commercial/HOA. Capture pricing + install requirements.",key:false},
+  {time:"THU 12:45 PM",title:"OpenEye Intelligent Video Monitoring Platform",who:"Jeremy",pri:"HIGH",note:"Managed video service layer. How commercial video RMR works on the Alarm.com platform.",key:false},
+];
+
+const ADCOM_QUESTIONS = [
+  "Q1: Walk us through the AI Proposal Builder workflow — how fast does it generate a proposal and what data inputs are needed?",
+  "Q2: CHeKT Video Bridge: integration path with our UL-listed central station, and what does per-account RMR look like for dealers?",
+  "Q3: V731B Solar Camera: minimum sun exposure for reliable operation in Montana winters (low angle, short days, limited direct sun)?",
+  "Q4: AI Video Event Search: included with existing dealer accounts or paid add-on? What's the per-account or per-site pricing?",
+  "Q5: Prism Cameras: installer certification requirement and timeline — can we train 185 techs through our own SSU platform?",
+  "Q6: ADC-FC100 Fire Communicator: what are the monitoring requirements and how does fire RMR billing work for dealers?",
+  "Q7: AI Access Assist preview: what's the timeline for general availability and is there a dealer early access program?",
+];
+
+const THU_TRAINER = [
+  {time:"8:00–8:50 AM",title:"Security Robotics: Patrol to Platform",room:"Venetian 203",note:"Field tech awareness + future SSU curriculum content.",crit:false},
+  {time:"9:00–10:00 AM",title:"⭐ Day 2 Keynote: AI-Driven Resilience (FULL NOTES)",room:"Main Stage",note:"Wayne missed this. Trainer captures in full. AI convergence = industry direction for the next 3 years.",crit:false},
+  {time:"10:00–11:00 AM",title:"⭐⭐ FALSE ALARM CRISIS 98% — RSPNDR",room:"Venetian 203",note:"MOST IMPORTANT SESSION. Notes on: RSPNDR business model, per-account pricing, dealer partnership path, how private response networks work, AVS-01 categories. WORD FOR WORD.",crit:true},
+  {time:"2:15–3:15 PM",title:"Real RMR: Scalable Revenue Streams",room:"Casanova 504",note:"Core RMR strategy — feeds BEARING program. Wayne may join partial.",crit:false},
+  {time:"2:15–3:15 PM",title:"Gladiators of the Sky: sUAS Drones",room:"Venetian 203",note:"sUAS evolution — field tech awareness and future product tier.",crit:false},
+  {time:"3:00–3:45 PM",title:"⭐ Drones + F1 Las Vegas Playbook (Skydio)",room:"Bridge #25059",note:"All three together when Wayne returns. LVMPD + Skydio operational playbook.",crit:false},
+];
+
+const THU_JEREMY = [
+  {time:"9:00 AM",title:"Alarm.com: Gunshot Detection + OpenEye",room:"Titian #2302",note:"NEW RMR PRODUCT. Full product details, pricing, install requirements.",crit:false},
+  {time:"9:00–10:00 AM",title:"Day 2 Keynote: AI-Driven Resilience",room:"Main Stage",note:"If not at ADC training — coordinate with Trainer.",crit:false},
+  {time:"10:00–11:00 AM",title:"7 Ways Video + Access Beyond Security",room:"Casanova 504",note:"Product roadmap intel — operational value beyond pure security.",crit:false},
+  {time:"10:00–11:00 AM",title:"Floor: Verkada #18033",room:"Exhibit Floor",note:"Competitive intel + dealer program. Commercial client comparisons.",crit:false},
+  {time:"12:45 PM",title:"Alarm.com: OpenEye Video Monitoring",room:"Titian #2302",note:"Commercial video RMR model. How does managed video monitoring work on the platform?",crit:false},
+  {time:"2:15–3:15 PM",title:"Real RMR: Scalable Revenue Streams",room:"Casanova 504",note:"Core RMR strategy session. Capture pricing models and partner structure.",crit:false},
+  {time:"3:00–3:45 PM",title:"⭐ Drones + F1 Las Vegas Playbook (Skydio)",room:"Bridge #25059",note:"All three together. LVMPD + Skydio DFR operational playbook.",crit:false},
+];
+
+const THU_JOINT = [
+  {time:"~2:00 PM",title:"Wayne returns — team debrief",note:"Trainer briefs Wayne on Keynote + FALSE ALARM session (top priority). Jeremy briefs on Alarm.com training + product finds."},
+  {time:"2:15 PM",title:"Wayne joins: Real RMR session (partial)",note:"Catch the second half of Real RMR if timing allows."},
+  {time:"3:00–3:45 PM",title:"ALL THREE: Skydio F1 Playbook session",note:"Bridge Booth #25059. The drone-as-first-responder use case at scale with LVMPD."},
+  {time:"Thu Afternoon",title:"Floor sweep — Wayne catches missed booths",note:"Priority: Honeywell #20059, LVT follow-up, Asylon #2097, Johnson Controls, any MUST HIT booths not yet visited."},
+];
+
+// ═══ RENDER ══════════════════════════════════════════════════════
+
+function sn(key){try{return localStorage.getItem('isc26_'+key)||'';}catch(e){return '';}}
+function sv(key,val){try{localStorage.setItem('isc26_'+key,val);}catch(e){}}
+
+function renderSchedule(){
+  const tb=document.getElementById('sched-body');
+  const dayCol={
+    "MON MAR 23":"#028090","TUE MAR 24":"#F4A700",
+    "WED MAR 25":"#DC143C","THU MAR 26 ⚠ WAYNE OUT AM":"#FF6B35",
+    "THU MAR 26":"#FF6B35","FRI MAR 27":"#6B8CFF"
+  };
+  SCHEDULE.forEach(r=>{
+    const tr=document.createElement('tr');
+    const isOut=r.day.includes('⚠');
+    const isStar=r.act.includes('⭐');
+    const dayC=Object.keys(dayCol).find(k=>r.day.startsWith(k.split(' ⚠')[0]))||"MON MAR 23";
+    const dc=dayCol[dayC]||"#028090";
+    tr.dataset.search=`${r.day} ${r.time} ${r.act} ${r.wayne} ${r.trainer} ${r.jeremy}`.toLowerCase();
+    tr.dataset.day=r.day;
+    tr.innerHTML=`
+      <td style="font-weight:700;color:${dc};white-space:nowrap;font-size:11px;">${r.day}</td>
+      <td style="color:#F4A700;white-space:nowrap;font-weight:700;font-size:11px;">${r.time}</td>
+      <td style="color:${isStar?'#fff':'#E8F0FF'};font-weight:${isStar?'700':'400'};font-size:12px;">${r.act}</td>
+      <td style="color:${r.wayne.includes('⚠')||r.wayne.includes('DEPARTS')?'#DC143C':r.wayne.includes('ATTEND')||r.wayne.includes('RETURN')?'#00C878':'#8A9BB8'};font-size:11px;">${r.wayne}</td>
+      <td style="color:#F4A700;font-size:11px;">${r.trainer}</td>
+      <td style="color:#028090;font-size:11px;">${r.jeremy}</td>`;
+    tb.appendChild(tr);
+  });
+}
+
+function renderExhibitors(){
+  const c=document.getElementById('exhibitors-list');
+  EXHIBITORS.forEach(ex=>{
+    const catC=ex.tier==='MUST HIT'?'#DC143C':ex.tier.includes('HIGH')?'#F4A700':'#028090';
+    const d=document.createElement('div');
+    d.className='card'; d.id='ex-'+ex.id;
+    d.dataset.tags=ex.tags||''; d.dataset.tier=ex.tier.toLowerCase();
+    d.dataset.search=`${ex.name} ${ex.booth} ${ex.cat} ${ex.tier} ${ex.what} ${ex.why} ${(ex.q||[]).join(' ')} ${(ex.tp||[]).join(' ')}`.toLowerCase();
+    const badgeC=ex.tier==='MUST HIT'?'br':ex.tier.includes('HIGH')?'bg':'bt';
+    d.innerHTML=`
+      <div class="ch" onclick="this.parentElement.classList.toggle('open')">
+        <div class="ct" style="color:${catC}">${ex.name}</div>
+        <span class="badge ${badgeC}">${ex.tier}</span>
+        <span style="color:#8A9BB8;font-size:11px;margin:0 8px">Booth ${ex.booth}</span>
+        <span class="badge bn">${ex.cat}</span>
+        <span class="toggle" style="margin-left:8px"></span>
+      </div>
+      <div class="cb">
+        <div class="ig">
+          <div class="il">ZONE</div><div class="iv">${ex.zone}</div>
+          <div class="il">BEST DAY</div><div class="iv" style="color:#00C878;font-weight:700">${ex.day} &nbsp;|&nbsp; ${ex.who}</div>
+          <div class="il">WHAT THEY DO</div><div class="iv">${ex.what}</div>
+          <div class="il">WHY IT MATTERS</div><div class="iv" style="border-color:#00C878;color:#00C878">${ex.why}</div>
+        </div>
+        <div class="two">
+          <div>
+            <div style="font-weight:700;color:#028090;font-size:11px;margin-bottom:7px;letter-spacing:.5px">KEY QUESTIONS TO ASK:</div>
+            <ul class="ql">${(ex.q||[]).map((q,i)=>`<li><span class="qn">Q${i+1}.</span>${q}</li>`).join('')}</ul>
+          </div>
+          <div>
+            <div style="font-weight:700;color:#F4A700;font-size:11px;margin-bottom:7px;letter-spacing:.5px">OUR TALKING POINTS:</div>
+            <ul class="tl">${(ex.tp||[]).map(t=>`<li>▶ ${t}</li>`).join('')}</ul>
+          </div>
+        </div>
+        <div style="margin-top:10px;font-size:10px;font-weight:700;color:#DC143C;letter-spacing:.5px">FOLLOW-UP CAPTURE:</div>
+        <div class="nf">
+          <div class="nf-item"><label>MET WITH (Name + Title)</label><input placeholder="First Last, VP Sales" oninput="sv('${ex.id}-met',this.value)" value="${sn(ex.id+'-met')}"/></div>
+          <div class="nf-item"><label>DEMO SCHEDULED</label><input placeholder="Yes / No / Date" oninput="sv('${ex.id}-demo',this.value)" value="${sn(ex.id+'-demo')}"/></div>
+          <div class="nf-item"><label>PRICING RECEIVED</label><input placeholder="Yes / No / Doc" oninput="sv('${ex.id}-price',this.value)" value="${sn(ex.id+'-price')}"/></div>
+          <div class="nf-item"><label>NEXT STEP / ACTION</label><input placeholder="Follow-up call, send spec..." oninput="sv('${ex.id}-next',this.value)" value="${sn(ex.id+'-next')}"/></div>
+          <div class="nf-item" style="grid-column:span 2"><label>NOTES</label><textarea placeholder="Key insights, pricing, product details, integration notes..." oninput="sv('${ex.id}-notes',this.value)">${sn(ex.id+'-notes')}</textarea></div>
+        </div>
+      </div>`;
+    c.appendChild(d);
+  });
+}
+
+function renderSessions(){
+  const c=document.getElementById('sessions-list');
+  let curDay='';
+  SESSIONS.forEach((s,i)=>{
+    if(s.day!==curDay){
+      curDay=s.day;
+      const dh=document.createElement('div');
+      dh.className='sh'; dh.textContent=s.day.toUpperCase();
+      if(s.day.includes('⚠')) dh.style.borderColor='#DC143C';
+      c.appendChild(dh);
+    }
+    const priC=s.pri.includes('CRITICAL')?'#8B0000':s.pri.includes('MUST')||s.pri.includes('NOT')?'#DC143C':s.pri.includes('ANCHOR')?'#1A1A2A':'#0D1B3E';
+    const assC=s.assigned.includes('ALL')?'#00C878':s.assigned.includes('Wayne')&&!s.assigned.includes('Trainer')?'#DC143C':s.assigned.includes('Trainer')?'#F4A700':s.assigned.includes('Jeremy')?'#028090':'#8A9BB8';
+    const div=document.createElement('div');
+    div.className='card'; div.dataset.search=`${s.day} ${s.title} ${s.room} ${s.assigned} ${s.pri} ${s.why} ${s.tags||''}`.toLowerCase();
+    div.dataset.tags=s.tags||'';
+    div.innerHTML=`
+      <div class="ch" onclick="this.parentElement.classList.toggle('open')">
+        <div><div class="ct" style="font-size:13px">${s.title}</div><div style="font-size:10px;color:#8A9BB8;margin-top:2px">${s.time} &nbsp;|&nbsp; ${s.room}</div></div>
+        <span class="badge" style="background:${priC};color:#fff;white-space:nowrap;margin:0 8px">${s.pri.split('—')[0].trim()}</span>
+        <span style="font-weight:700;color:${assC};font-size:11px;white-space:nowrap">→ ${s.assigned}</span>
+        <span class="toggle" style="margin-left:10px"></span>
+      </div>
+      <div class="cb">
+        <div class="ig">
+          <div class="il">ASSIGNED TO</div><div class="iv" style="color:${assC};font-weight:700">${s.assigned}</div>
+          <div class="il">WHY ATTEND</div><div class="iv" style="color:#00C878">${s.why}</div>
+        </div>
+        <div style="margin:10px 0 6px;font-weight:700;color:#F4A700;font-size:11px">SESSION NOTES:</div>
+        ${Array(5).fill('<div style="border-bottom:1px solid #2A3F6A;height:26px;margin-bottom:3px"></div>').join('')}
+        <div class="nf" style="margin-top:8px">
+          <div class="nf-item"><label>KEY TAKEAWAYS</label><textarea placeholder="Main insights..." oninput="sv('sess${i}-key',this.value)">${sn('sess'+i+'-key')}</textarea></div>
+          <div class="nf-item"><label>ACTION ITEMS</label><textarea placeholder="What needs to happen as a result..." oninput="sv('sess${i}-act',this.value)">${sn('sess'+i+'-act')}</textarea></div>
+        </div>
+      </div>`;
+    c.appendChild(div);
+  });
+}
+
+function renderChecklist(){
+  const c=document.getElementById('checklist-container');
+  let curTier='';
+  CHECKLIST.forEach(item=>{
+    if(item.tier!==curTier){
+      curTier=item.tier;
+      const sh=document.createElement('div'); sh.className='sh';
+      sh.textContent=item.tier.toUpperCase();
+      if(item.tier==='MUST HIT') sh.style.borderColor='#DC143C';
+      c.appendChild(sh);
+    }
+    const checked=localStorage.getItem('chk-'+item.id)==='true';
+    const div=document.createElement('div');
+    div.className='ci'+(checked?' done':''); div.id='ci-'+item.id;
+    div.dataset.tier=item.tier.toLowerCase(); div.dataset.who=(item.who||'').toLowerCase();
+    div.innerHTML=`
+      <input type="checkbox" id="${item.id}" ${checked?'checked':''} onchange="toggleChk('${item.id}',this)">
+      <div style="flex:1">
+        <div style="font-weight:700;color:#fff">${item.name}</div>
+        <div style="font-size:11px;color:#8A9BB8">Booth ${item.booth} &nbsp;|&nbsp; ${item.cat} &nbsp;|&nbsp; ${item.day}</div>
+      </div>
+      <div style="text-align:right">
+        <span class="badge" style="background:${item.tier==='MUST HIT'?'#DC143C':item.tier==='HIGH'?'#F4A700':'#028090'};color:${item.tier==='HIGH'?'#0A0F1E':'#fff'}">${item.tier}</span>
+        <div style="font-size:10px;color:#028090;margin-top:2px">${item.who}</div>
+      </div>`;
+    c.appendChild(div);
+  });
+  updateProgress();
+}
+
+function renderAlarmCom(){
+  const c=document.getElementById('adcom-list');
+  ADCOM_SCHEDULE.forEach((r,i)=>{
+    const div=document.createElement('div');
+    div.className='adcom-item'+(r.key?' key':'');
+    div.innerHTML=`
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <span style="font-weight:700;color:${r.key?'#DC143C':'#F4A700'};font-size:11px;white-space:nowrap">${r.time}</span>
+        <span style="font-weight:700;color:#fff;font-size:12px">${r.title}</span>
+        <span class="badge ${r.pri==='MUST'?'br':'bn'}" style="white-space:nowrap">${r.pri}</span>
+        <span style="color:#028090;font-size:11px;margin-left:auto;white-space:nowrap">→ ${r.who}</span>
+      </div>
+      <div style="font-size:11px;color:${r.key?'#ff8888':'#8A9BB8'}">${r.note}</div>`;
+    c.appendChild(div);
+  });
+  const qc=document.getElementById('adcom-questions');
+  ADCOM_QUESTIONS.forEach(q=>{
+    const div=document.createElement('div');
+    div.className='adcom-item';
+    div.innerHTML=`<div style="font-size:12px;color:#E8F0FF">${q}</div>`;
+    qc.appendChild(div);
+  });
+}
+
+function renderThursday(){
+  [['thu-trainer',THU_TRAINER,'#F4A700'],['thu-jeremy',THU_JEREMY,'#028090']].forEach(([id,data,col])=>{
+    const c=document.getElementById(id);
+    data.forEach(r=>{
+      const div=document.createElement('div');
+      div.style.cssText=`padding:9px 12px;background:${r.crit?'rgba(220,20,60,.15)':'rgba(2,128,144,.07)'};border-left:3px solid ${r.crit?'#DC143C':col};margin-bottom:7px;border-radius:0 4px 4px 0`;
+      div.innerHTML=`
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px">
+          <span style="font-weight:700;color:${col};font-size:10px">${r.time}</span>
+          <span style="font-weight:700;color:${r.crit?'#ff6666':'#fff'};font-size:12px">${r.title}</span>
+          ${r.room?`<span style="font-size:10px;color:#8A9BB8;margin-left:auto">${r.room}</span>`:''}
+        </div>
+        <div style="font-size:11px;color:${r.crit?'#ff8888':'#8A9BB8'}">${r.note}</div>`;
+      c.appendChild(div);
+    });
+  });
+  const jc=document.getElementById('thu-joint');
+  THU_JOINT.forEach(r=>{
+    const div=document.createElement('div');
+    div.style.cssText=`padding:9px 12px;background:rgba(0,200,120,.07);border-left:3px solid #00C878;margin-bottom:7px;border-radius:0 4px 4px 0`;
+    div.innerHTML=`<div style="font-weight:700;color:#00C878;font-size:11px;margin-bottom:3px">${r.time} — ${r.title}</div><div style="font-size:11px;color:#8A9BB8">${r.note}</div>`;
+    jc.appendChild(div);
+  });
+}
+
+// ═══ INTERACTIONS ═══════════════════════════════════════════════
+
+function showTab(id){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('sec-'+id).classList.add('active');
+  event.currentTarget.classList.add('active');
+  clearSearch();
+}
+
+let curFilter='all', curSearch='';
+
+function doSearch(){
+  curSearch=document.getElementById('search-input').value.toLowerCase().trim();
+  applyFilters();
+}
+
+function filterAll(cat,btn){
+  document.querySelectorAll('#search-bar .fb').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  curFilter=cat;
+  applyFilters();
+}
+
+function applyFilters(){
+  let visible=0;
+  // Exhibitors
+  document.querySelectorAll('#exhibitors-list .card').forEach(el=>{
+    const st=el.dataset.search||''; const tags=el.dataset.tags||''; const tier=el.dataset.tier||'';
+    const matchSearch=!curSearch||st.includes(curSearch);
+    const matchFilter=curFilter==='all'||(curFilter==='must'&&tier.includes('must'))||(curFilter==='ai'&&(tags.includes('ai')||tags.includes('video')))||(curFilter==='drone'&&tags.includes('drone'))||(curFilter==='alarm'&&(tags.includes('alarm')||tags.includes('ops')))||(curFilter==='wayne'&&tags.includes('wayne'))||(curFilter==='trainer'&&tags.includes('trainer'))||(curFilter==='jeremy'&&tags.includes('jeremy'))||(curFilter==='alarmcom'&&(tags.includes('alarmcom')||el.id==='ex-adcom'));
+    const show=matchSearch&&matchFilter;
+    el.classList.toggle('sh-hide',!show);
+    if(show) visible++;
+  });
+  // Sessions
+  document.querySelectorAll('#sessions-list .card').forEach(el=>{
+    const st=el.dataset.search||''; const tags=el.dataset.tags||'';
+    const matchSearch=!curSearch||st.includes(curSearch);
+    const matchFilter=curFilter==='all'||(curFilter==='must'&&(tags.includes('must')||tags.includes('critical')))||(curFilter==='ai'&&tags.includes('ai'))||(curFilter==='drone'&&tags.includes('drone'))||(curFilter==='alarm'&&(tags.includes('alarm')||tags.includes('falsealarm')))||(curFilter==='wayne'&&tags.includes('wayne'))||(curFilter==='trainer'&&tags.includes('trainer'))||(curFilter==='jeremy'&&tags.includes('jeremy'))||(curFilter==='alarmcom'&&tags.includes('alarmcom'));
+    const show=matchSearch&&matchFilter;
+    el.classList.toggle('sh-hide',!show);
+    if(show) visible++;
+  });
+  // Schedule rows
+  document.querySelectorAll('#sched-body tr').forEach(el=>{
+    const st=el.dataset.search||'';
+    const matchSearch=!curSearch||st.includes(curSearch);
+    const matchFilter=curFilter==='all'||(curFilter==='wayne'&&st.includes('wayne'))||(curFilter==='trainer'&&st.includes('trainer'))||(curFilter==='jeremy'&&st.includes('jeremy'))||(curFilter==='alarmcom'&&st.includes('alarm.com'));
+    el.classList.toggle('sh-hide',!matchSearch||!matchFilter);
+  });
+  // Update count
+  const cnt=document.getElementById('cnt');
+  if(curSearch||curFilter!=='all') cnt.textContent=visible+' results';
+  else cnt.textContent='';
+  highlightSearch();
+}
+
+function highlightSearch(){
+  document.querySelectorAll('.hl').forEach(el=>{el.outerHTML=el.innerHTML;});
+  if(!curSearch||curSearch.length<2) return;
+  const walk=document.createTreeWalker(document.getElementById('main'),NodeFilter.SHOW_TEXT,null,false);
+  const nodes=[]; let n;
+  while((n=walk.nextNode())) if(n.nodeValue.toLowerCase().includes(curSearch)) nodes.push(n);
+  nodes.forEach(node=>{
+    const re=new RegExp(`(${curSearch.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+    const span=document.createElement('span'); span.innerHTML=node.nodeValue.replace(re,'<span class="hl">$1</span>');
+    node.parentNode.replaceChild(span,node);
+  });
+}
+
+function clearSearch(){
+  document.getElementById('search-input').value=''; curSearch=''; curFilter='all';
+  document.querySelectorAll('#search-bar .fb').forEach(b=>b.classList.remove('active'));
+  document.querySelector('#search-bar .fb').classList.add('active');
+  document.querySelectorAll('.sh-hide').forEach(el=>el.classList.remove('sh-hide'));
+  document.getElementById('cnt').textContent='';
+}
+
+function toggleChk(id,cb){
+  try{localStorage.setItem('chk-'+id,cb.checked?'true':'false');}catch(e){}
+  const item=document.getElementById('ci-chk-'+id)||document.getElementById('ci-'+id.replace('chk-','ci-'));
+  const parent=cb.closest('.ci');
+  if(parent) parent.classList.toggle('done',cb.checked);
+  updateProgress();
+}
+
+function updateProgress(){
+  const total=CHECKLIST.length;
+  const done=CHECKLIST.filter(i=>{try{return localStorage.getItem('chk-'+i.id)==='true';}catch(e){return false;}}).length;
+  const el=document.getElementById('chk-progress');
+  if(el) el.textContent=`${done}/${total} visited (${Math.round(done/total*100)}%)`;
+}
+
+function filterChk(val,btn){
+  document.querySelectorAll('#sec-checklist .fb').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.ci').forEach(el=>{
+    const tier=(el.dataset.tier||'').toLowerCase();
+    const who=(el.dataset.who||'').toLowerCase();
+    let show=val==='all'||tier===val.toLowerCase()||(val==='wayne'&&who.includes('wayne'))||(val==='jeremy'&&who.includes('jeremy'));
+    el.classList.toggle('sh-hide',!show);
+  });
+}
+
+function clearChecks(){
+  if(!confirm('Reset all booth checklist? Cannot be undone.')) return;
+  CHECKLIST.forEach(i=>{try{localStorage.removeItem('chk-'+i.id);}catch(e){}});
+  document.querySelectorAll('.ci input[type=checkbox]').forEach(cb=>cb.checked=false);
+  document.querySelectorAll('.ci.done').forEach(el=>el.classList.remove('done'));
+  updateProgress();
+}
+
+// Contacts
+function addContact(){
+  const fields=['cf-first','cf-last','cf-co','cf-title','cf-email','cf-phone','cf-booth','cf-by','cf-notes'];
+  const vals=fields.map(id=>document.getElementById(id).value.trim());
+  if(!vals[0]&&!vals[2]){alert('Enter at least a first name or company.');return;}
+  const contact={id:Date.now(),first:vals[0],last:vals[1],co:vals[2],title:vals[3],email:vals[4],phone:vals[5],booth:vals[6],by:vals[7],notes:vals[8]};
+  const existing=loadContacts();
+  existing.push(contact);
+  try{localStorage.setItem('isc26_contacts',JSON.stringify(existing));}catch(e){}
+  fields.forEach(id=>document.getElementById(id).value='');
+  renderContactList();
+}
+
+function loadContacts(){try{return JSON.parse(localStorage.getItem('isc26_contacts')||'[]');}catch(e){return [];}}
+
+function renderContactList(){
+  const c=document.getElementById('contacts-list'); c.innerHTML='';
+  const contacts=loadContacts();
+  if(!contacts.length){c.innerHTML='<div style="color:#8A9BB8;padding:20px;text-align:center">No contacts added yet.</div>';return;}
+  contacts.forEach((ct,i)=>{
+    const div=document.createElement('div'); div.className='ce';
+    div.innerHTML=`
+      <div>
+        <div class="cen">${ct.first} ${ct.last}${ct.title?` — ${ct.title}`:''}</div>
+        <div class="ced">${ct.co}${ct.booth?` | Booth ${ct.booth}`:''}${ct.email?` | ${ct.email}`:''}${ct.phone?` | ${ct.phone}`:''}</div>
+        ${ct.notes?`<div style="font-size:11px;color:#028090;margin-top:3px">${ct.notes}</div>`:''}
+        ${ct.by?`<div style="font-size:10px;color:#6B7280;margin-top:2px">Captured by: ${ct.by}</div>`:''}
+      </div>
+      <button onclick="deleteContact(${i})">DELETE</button>`;
+    c.appendChild(div);
+  });
+}
+
+function deleteContact(i){
+  const c=loadContacts(); c.splice(i,1);
+  try{localStorage.setItem('isc26_contacts',JSON.stringify(c));}catch(e){} renderContactList();
+}
+
+function clearContacts(){
+  try{localStorage.removeItem('isc26_contacts');}catch(e){} renderContactList();
+}
+
+function exportContacts(){
+  const c=loadContacts();
+  if(!c.length){alert('No contacts to export.');return;}
+  const txt=c.map(ct=>`${ct.first} ${ct.last} | ${ct.co} | ${ct.title} | ${ct.email} | ${ct.phone} | Booth ${ct.booth} | By: ${ct.by}\nNotes: ${ct.notes}`).join('\n\n---\n\n');
+  navigator.clipboard.writeText(txt).then(()=>alert(`${c.length} contacts copied to clipboard.`)).catch(()=>alert(txt));
+}
+
+// ═══ INIT ════════════════════════════════════════════════════════
+renderSchedule();
+renderExhibitors();
+renderSessions();
+renderChecklist();
+renderAlarmCom();
+renderThursday();
+renderContactList();
+</script>
+</body>
+</html>
